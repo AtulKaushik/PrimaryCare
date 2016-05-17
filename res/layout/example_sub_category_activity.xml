@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill"
+    android:background="@drawable/background_entire_screen"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/wrap"
+        android:id="@+id/sub_category_description"
+        android:textSize="20sp"
+        android:padding="5dp"        
+        android:textColor="@color/white" />
+    
+	<RelativeLayout
+		android:id="@+id/sub_category_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="@color/light_blue" 
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip"
+		android:layout_marginBottom="5dip"
+		android:layout_marginRight="5dip"
+		android:layout_marginLeft="5dip"
+		android:clickable="true"
+		>
+		
+		<ImageView
+			android:id="@+id/sub_category_button_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true" />
+		 
+		<TextView
+			android:textColor="@color/white"
+			android:text="@string/sub_category_button_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dp" 
+			android:textStyle="bold"
+            android:padding="5dp"	 		
+			android:layout_toRightOf="@id/sub_category_button_image"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>	    
+    
+
+</LinearLayout>

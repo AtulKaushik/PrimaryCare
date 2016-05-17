@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="9" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/img_desc"
+                    android:onClick="getSettings"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_action_settings" />
+
+                <ImageView
+                    android:id="@+id/clientimain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/logo_premier_one" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/img_desc"
+                    android:onClick="getInfo"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_action_about" />
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#CE0000" />
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/p1emergency_menu_bg"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/clientimain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:background="@xml/rounded_corners_left"
+                    android:padding="5dp"
+                    android:text="Frisco starwood, TX"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/dark_blue"
+                android:onClick="getAppointments"
+                android:orientation="vertical"
+                android:weightSum="4" >
+
+                <ImageView
+                    android:id="@+id/p1_menu_wait_time_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/appointment" />
+
+                <TextView
+                    android:id="@+id/p1_menu_wait_time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_white"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="APPOINTMENTS"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/slate"
+                android:onClick="getProfile"
+                android:orientation="vertical"
+                android:weightSum="4" >
+
+                <ImageView
+                    android:id="@+id/p1_menu_1_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/p1_menu_1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_white"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="PROFILE"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:onClick="getInfoDetails"
+                android:orientation="vertical"
+                android:weightSum="4" >
+
+                <ImageView
+                    android:id="@+id/p1_menu_2_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/ic_location_3" />
+
+                <TextView
+                    android:id="@+id/p1_menu_2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_white"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="LOCATIONS"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/light_red"
+                android:onClick="getWaitTimes"
+                android:orientation="vertical"
+                android:weightSum="4" >
+
+                <ImageView
+                    android:id="@+id/p1_menu_4_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/wait_time" />
+
+                <TextView
+                    android:id="@+id/p1_menu_4_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent_white"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="WAIT TIMES"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/clientibottom"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/view_privacy_statement"
+                android:textColor="#7a8184" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

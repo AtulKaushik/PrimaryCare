@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!--
+             <WebView
+            android:id="@+id/about_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            -->
+
+            <TextView
+                android:id="@+id/p1_p1e_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Premier One Emergency"
+                android:textColor="@color/p1e_red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/p1_privacy_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@color/p1e_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1_privacy_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/p1e_policy"
+                android:textColor="@color/emh_dark_grey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/p1_terms_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Use"
+                android:textColor="@color/p1e_blue_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/p1_terms_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/p1e_terms"
+                android:textColor="@color/emh_dark_grey"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/policy_decline_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center_horizontal"
+            android:onClick="declinePolicy"
+            android:text="Decline" />
+
+        <Button
+            android:id="@+id/policy_accept_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center_horizontal"
+            android:onClick="acceptPolicy"
+            android:text="Accept" />
+    </LinearLayout>
+
+</LinearLayout>

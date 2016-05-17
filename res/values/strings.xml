@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EMH</string>
+    <string name="img_desc"></string>
+    
+    <string name="loading">Loading&#8230;</string>
+
+    <!-- Home tab bar label names -->
+    <string name="swipe_tab_main_text">One</string>
+    <string name="swipe_tab_two_text">Two</string>
+    <string name="swipe_tab_three_text">Three</string>
+    <string name="swipe_tab_four_text">Four</string>
+
+    <!-- Demo 1 Fragment -->
+    <string name="swiping_tab_1_title">Tab 1 Title</string>
+
+    <!-- Demo 2 Fragment -->
+    <string name="swiping_tab_2_title">Tab 2 Title</string>
+
+    <!-- Demo 2 Sub Menu -->
+    <string name="demo2_submenu_button1_text">Button 1</string>
+    <string name="demo2_submenu_button2_text">Button 2</string>
+
+    <!-- Demo 3 Fragment -->
+    <string name="swiping_tab_3_title">Tab 3 Title</string>
+
+    <!-- Demo 4 Fragment -->
+    <string name="swiping_tab_4_title">Tab 4 Title</string>
+
+    <!-- UI navigation tags - never change this, please -->
+    <string name="selectedNavId">1</string>
+
+    <!-- Keys -->
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    
+    <string name="enter_pin">PASSCODE</string>
+    <string name="photo_desc"> - Emergency Medicare</string>
+    <string name="reset_pin">RESET</string>
+    <string name="dummy"></string>
+    
+    <!-- Level Navigation Example -->
+    <string name="action_bar_title_appointments">Appointments</string>
+    <string name="action_bar_title_patient_reports">Medical Reports</string>
+    <string name="action_bar_title_patient_history">Medical History</string>
+    <string name="action_bar_title_wait_time">Wait Times</string>
+    <string name="action_bar_title_locations">Premier One Locations</string>
+    
+    <string name="action_bar_title_advance">Advance</string>
+    <string name="main_swipe_tab_title">Top Level Title</string>
+    <string name="top_level_description">This is a top-level view with split action bar.</string>
+    <string name="top_level_button_text">Navigate to a category view</string>
+    <string name="sub_category_title"></string>
+    <string name="sub_category_description">This is a sub-level category view. You can click on on the icon on the action bar to go up a level.</string>
+    <string name="sub_category_button_text">Navigate to a detail view</string>
+    <string name="detail_view_title">Detail View Title</string>
+    <string name="detail_view_description">This is a detail view.  This detail view is defined as being on the same level as a category.  Clicking on Up on the action bar goes back to the top-level. Click Back goes back to the previous screen. </string>
+    <string name="detail_view_button_text">Long-click for Action Mode</string>
+
+    <!-- Action Items -->
+    <string name="search_action">Search</string>
+    <string name="setting_action">Setting</string>
+    <string name="refresh_action">Refresh</string>
+    <string name="favorite_action">Favorite</string>
+    <string name="select_action">Select</string>
+    <string name="view_privacy_statement"><u>&#169;2014 Premier One Emergency Centers</u></string>
+    <string name="take_a_snap">USE YOUR PHONE\'S CAMERA \nTO SHARE PATIENT\'S PHOTO</string>
+    <string name="snap_report">USE YOUR PHONE\'S CAMERA \nTO GET REPORT FROM PHOTO</string>
+    <string name="action_review">Feedback</string>
+    <string name="action_call">Deposit</string>
+    <string name="transfer_action">Transfer</string>
+    <string name="specialty_action">Specialty</string>
+    <string name="insurer_action">Insurers</string>
+    <string name="action_location">Help</string> 
+    
+    <string name="swiping_tab_summary_title">REGULAR CARE</string>
+    <string name="swiping_tab_activity_title">EMERGENCY CARE</string>
+    <string name="actionbar_title_loc">FIND MEDICAL CENTER</string>
+    <string name="actionbar_title_p1_info">Premier One Info Center</string>
+    
+    <string name="acc_msg">Do you want to proceed with this account?</string>
+     <string name="username_hint">Username ( full qualified id )</string>
+    <string name="password_hint">Password (to confirm)</string>
+    <string name="wrong_credential_msg">Please check the values you have entered, if you are stuck on this dialog</string>
+    <string name="remember_me">Remember Me</string>
+   
+     <string name="google_address_summary">Email address of your gmail account</string>
+    <string name="google_password_summary">Password of the gmail account</string>
+    <string name="import_range_summary">max no. of mails to be imported at a time</string>
+    
+    <string name="p1e_policy">Explains what information we collect and why, how we use it, and how to review and update it.\n\nWe use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones, and to protect our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads.\n\n</string>
+    <string name="p1e_terms">Thanks for using our products and services (“Services”). The Services are provided by Premier One Emergency, located at 1415 Legacy Dr. Ste 250 Frisco, TX 75034, United States. \n\nBy using our Services, you are agreeing to these terms. Please read them carefully. \n\nOur Services are very diverse, so sometimes additional terms or product requirements may apply. Additional terms will be available with the relevant Services, and those additional terms become part of your agreement with us if you use those Services.</string>
+   <string name="privacy_terms_title">Privacy &amp; Terms</string>
+   <string name="p1_emergency_menu_header"><b>Premier One</b>\nEmergency</string>
+
+</resources>

@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e474e" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3e474e"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:visibility="gone" >
+
+        <com.p1emergency.view.SectionedListView
+            xmlns:slh="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3e474e"
+            android:divider="#3e474e"
+            android:layout_weight="0.85"
+            android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+            slh:areHeadersSticky="true" >
+        </com.p1emergency.view.SectionedListView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <ImageView
+                android:id="@+id/camicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/camera_icon"
+                    android:clickable="true"
+                    android:onClick="startCamera" />
+            <!-- android:background="#194f7a" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/camicon"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/camicon"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/snap_report"
+                    android:textColor="#7a8184"
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:onClick="startCamera" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- <TextView
+            android:id="@+id/privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="8dp"
+            android:autoLink="all"
+            android:linksClickable="false"
+            android:selectAllOnFocus="false"
+            android:text="@string/view_privacy_statement"
+            android:textColor="#7a8184" /> -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/progressLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/spinner" />
+
+</FrameLayout>

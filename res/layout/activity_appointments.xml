@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e474e" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3e474e"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:visibility="gone" >
+
+        <com.p1emergency.view.SectionedListView
+            xmlns:slh="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3e474e"
+            android:divider="#3e474e"
+            android:layout_weight="0.9"
+            android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+            slh:areHeadersSticky="true" >
+        </com.p1emergency.view.SectionedListView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" >
+    <TextView
+        android:id="@+id/get_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_bar"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="getAppointment"
+        android:padding="10dp"
+        android:text="GET APPOINTMENT"
+        android:textSize="25sp"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/progressLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/spinner" />
+
+</FrameLayout>

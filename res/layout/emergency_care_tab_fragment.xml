@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/fill"
+    android:background="@drawable/cell"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Baylor University Medical Center\n3500 Gaston Avenue\nDallas, TX 75246"
+            android:textColor="@color/emh_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textView1"
+            android:paddingTop="2dp"
+            android:text="Distance : 0.78 Miles\nAvg. Waiting Period : 32 Minutes"
+            android:textColor="@color/emh_red"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Nearest Hospital :"
+            android:textColor="@color/emh_dark_grey"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="italic|bold" />
+
+        <ImageButton
+            android:id="@+id/emergencyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:onClick="callEmergency"
+            android:src="@drawable/ic_action_call"
+            android:background="@color/emh_blue" />
+
+        <ImageButton
+            android:id="@+id/locator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="@+id/textView1"
+            android:layout_toRightOf="@id/emergencyBtn"
+            android:layout_alignTop="@id/emergencyBtn"
+            android:onClick="locateHospital"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_action_place"
+            android:background="@color/emh_blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/call_911"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/emh_blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="call911"
+        android:padding="5dp"
+        android:text="Call 911"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    
+    
+    <LinearLayout android:id="@+id/other_hospitals_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/call_911"
+        android:weightSum="2">
+        <TextView
+        android:id="@+id/other_hospitals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Other hospitals :"
+        android:textColor="@color/emh_red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="3dp" />
+    
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/hospital_sort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sort by : { Distance }"
+        android:textColor="@color/header_bg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="3dp" />
+    </LinearLayout>
+
+    <com.p1emergency.view.SectionedListView
+        xmlns:slh="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/customlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="@drawable/separator"
+        slh:areHeadersSticky="true" />
+
+</LinearLayout>

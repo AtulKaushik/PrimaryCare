@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/custom_blue"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/sidebar_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/side_menu_list_divider"
+        android:dividerHeight="1.5dp" />
+
+</LinearLayout>

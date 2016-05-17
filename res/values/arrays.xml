@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="actionbar_dropdown_list">
+        <item>Category Item One</item>
+        <item>Category Item Two</item>
+        <item>Category Item Three</item>
+    </string-array>
+    <string-array name="import_ranges">
+        <item>05 Messages</item>
+        <item>10 Messages</item>
+        <item>15 Messages</item>
+        <item>20 Messages</item>
+        <item>25 Messages</item>
+    </string-array>
+    <string-array name="import_range_values">
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+    
+    <string-array name="sort_categories">
+        <item>Ranking</item>
+        <item>Distance</item>
+        <item>Specialty</item>
+        <item>Rating</item>
+    </string-array>
+    
+    <string-array name="specialties">
+        <item>Cancer</item>
+        <item>Cardiology</item>
+        <item>Gastroenterology</item>
+        <item>Geriatrics</item>
+        <item>Gynecology</item>
+        <item>Nephrology</item>
+        <item>Neurology</item>
+        <item>Orthopedics</item>
+        <item>Pulmonology</item>
+        <item>rology</item>
+        <item>ENT</item>
+        <item>Ophthalmology</item>
+    </string-array>
+
+</resources>

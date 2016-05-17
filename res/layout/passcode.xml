@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyBoardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:layout_gravity="center|bottom"
+        android:background="@color/transparent_grey"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/seven"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="7"
+                android:text="@string/seven"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/eight"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="8"
+                android:text="@string/eight"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nine"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="9"
+                android:text="@string/nine"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/resetcode"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:enabled="false"
+                android:text="@string/reset_pin"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="0"
+                android:text="@string/zero"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:contentDescription="@string/img_desc"
+                android:src="@drawable/numpad_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="128dp"
+        android:layout_gravity="bottom|center"
+        android:background="@color/transparent_grey"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/one"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="1"
+                android:text="@string/one"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/two"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="2"
+                android:text="@string/two"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/three"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="3"
+                android:text="@string/three"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/four"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="4"
+                android:text="@string/four"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/five"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="5"
+                android:text="@string/five"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/six"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/lockscreen_btn_selector"
+                android:tag="6"
+                android:text="@string/six"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom|center"
+        android:background="@color/transparent_black"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.198"
+            android:background="@color/transparent_black"
+            android:clickable="true"
+            android:contentDescription="@string/dummy"
+            android:onClick="locateHospital"
+            android:src="@drawable/location_icon" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.002"
+            android:background="@color/dark_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="85dp"
+            android:layout_gravity="bottom|center"
+            android:layout_weight="0.60"
+            android:background="@color/transparent_black"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="4dp"
+                android:text="@string/enter_pin"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/editTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/padding_medium" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/transparent_white"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:lines="1"
+                    android:maxLength="1" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/transparent_white"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:lines="1"
+                    android:maxLength="1" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@color/transparent_white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:lines="1"
+                    android:maxLength="1" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@color/transparent_white"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:lines="1"
+                    android:maxLength="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.002"
+            android:background="@color/dark_gray" />
+
+        <ImageButton
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.198"
+            android:background="@color/transparent_black"
+            android:clickable="true"
+            android:contentDescription="@string/dummy"
+            android:onClick="call911"
+            android:src="@drawable/numpad_contact_icon" />
+    </LinearLayout>
+
+   
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/global_icon_info"
+        android:clickable="true"
+        android:onClick="getInfo" />
+    
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/img_desc"
+        android:src="@drawable/ic_action_settings"
+        android:clickable="true"
+        android:onClick="getSettings" />
+
+
+</merge>

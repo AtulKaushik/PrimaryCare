@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e474e" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#3e474e"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.p1emergency.view.SectionedListView
+            xmlns:slh="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/customlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3e474e"
+            android:divider="#3e474e"
+            android:layoutAnimation="@anim/layout_bottom_to_top_slide"
+            slh:areHeadersSticky="true" >
+        </com.p1emergency.view.SectionedListView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" >
+
+            <ImageView
+                android:id="@+id/camicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/camera_icon" />
+            <!-- android:background="#194f7a" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/camicon"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/camicon"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/take_a_snap"
+                    android:textColor="#7a8184"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="FIND OUT HOW"
+                    android:textColor="@color/header_bg" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="8dp"
+            android:autoLink="all"
+            android:linksClickable="false"
+            android:selectAllOnFocus="false"
+            android:text="@string/view_privacy_statement"
+            android:textColor="#7a8184" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/progressLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/spinner" />
+
+</FrameLayout>

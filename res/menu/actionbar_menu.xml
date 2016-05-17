@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     
+	<item 
+    	android:id="@+id/action_call"
+        android:title="@string/action_call"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_call"/>
+	
+	<item 
+    	android:id="@+id/specialty_action"
+    	android:title="@string/specialty_action"
+    	android:showAsAction="ifRoom"    	
+        android:icon="@drawable/ic_action_important"
+       />
+	
+	<item 
+    	android:id="@+id/action_location"
+    	android:title="@string/action_location"
+    	android:showAsAction="ifRoom|withText"    	
+        android:icon="@drawable/locations_icon"
+       />	
+       
+	<item 
+    	android:id="@+id/insurer_action"
+    	android:title="@string/insurer_action"
+    	android:showAsAction="ifRoom"    	
+        android:icon="@drawable/ic_action_secure"
+       />
+       
+	<item 
+    	android:id="@+id/action_review"
+        android:title="@string/action_review"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_feedback"/>
+       
+</menu>

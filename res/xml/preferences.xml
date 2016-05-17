@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- android:defaultValue="@string/no_address_specified" -->
+    <PreferenceCategory android:title="sign up" >
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="enter email id"
+            android:inputType="textEmailAddress"
+            android:key="googleAddress"
+            android:summary="@string/google_address_summary"
+            android:title="EMAIL ID" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="enter mail password"
+            android:inputType="textPassword"
+            android:key="googlePassword"
+            android:summary="@string/google_password_summary"
+            android:title="MAIL PASSWORD" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Remember your account settings" >
+        <CheckBoxPreference
+            android:key="remember"
+            android:title="Remember" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
